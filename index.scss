@@ -77,8 +77,10 @@ body{
 #close-button{
   width: 50px;
   height: 50px;
-  transform: translateX(2rem) translateY(4rem);
+  transform: translateX(-2rem) translateY(4rem);
   position: fixed;
+  top: 0;
+  right: 0;
   #line1{
     width: 40px;
     height: 10px;
@@ -111,7 +113,8 @@ nav{
     overflow-x: hidden;
     scrollbar-width: none;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     padding: 5rem 1rem;
     background-color: #563C5C;
@@ -121,7 +124,7 @@ nav{
       a{
         text-decoration: none;
         color: white;
-        font-size: clamp(4rem, 10vw, 10rem);
+        font-size: clamp(4rem, 8vw, 8rem);
       }
     }
   }
