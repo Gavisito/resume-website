@@ -146,15 +146,15 @@ nav ul li a {
     font-size: clamp(2rem, 6vw, 6rem);
   }
   .home-content #self-intro #explore-button {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
   .home-content figure {
     width: 100%;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
   }
   .home-content figure img {
     width: 100%;
-    height: 85vw;
+    height: 90vw;
   }
   .home-content hr {
     width: 95%;
