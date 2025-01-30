@@ -17,33 +17,99 @@ body {
   scrollbar-width: none;
 }
 
-nav {
+.home-content {
   width: 100%;
-  min-height: 80px;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: row;
-  gap: 0.25rem;
-  height: 100dvh;
+  position: relative;
 }
-nav h2 {
+.home-content #self-intro {
+  width: 45%;
+  padding: 3rem 3rem;
+}
+.home-content #self-intro h2 {
   text-align: left;
   word-break: keep-all;
-  width: 50%;
-  font-size: clamp(5rem, 7vw, 7rem);
-  padding: 5rem 1.5rem;
-  background-image: url();
-  background-color: #E6E6FA;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: clamp(4rem, 5vw, 5rem);
+  color: black;
+}
+.home-content #self-intro h3 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  color: #32174D;
+  margin-bottom: 3rem;
+}
+.home-content #self-intro #explore-button {
+  padding: 1rem 3.5rem;
+  border: 2px solid black;
+  font-size: 1.25rem;
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.home-content figure {
+  width: 55%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-content figure img {
+  width: 100%;
+  height: 100vh;
+  border-radius: 5px;
+}
+
+.menu-opacity {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#close-button {
+  width: 50px;
+  height: 50px;
+  transform: translateX(2rem) translateY(4rem);
+  position: fixed;
+}
+#close-button #line1 {
+  width: 40px;
+  height: 10px;
+  transform: rotate(45deg);
+  background-color: white;
+}
+#close-button #line2 {
+  width: 40px;
+  height: 10px;
+  transform: rotate(-45deg) translateY(-7px) translateX(7px);
+  background-color: white;
+}
+
+nav {
+  width: 55%;
+  display: flex;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
 }
 nav ul {
   display: flex;
-  width: 100%;
   min-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none;
   flex-direction: column;
   align-items: end;
-  width: 50%;
+  width: 100%;
   padding: 5rem 1rem;
   background-color: #32174D;
 }
@@ -54,17 +120,33 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: clamp(5rem, 10vw, 10rem);
+  font-size: clamp(4rem, 11vw, 11rem);
 }
 
 @media screen and (max-width: 1025px) {
-  nav {
+  .home-content {
     flex-direction: column;
   }
-  nav h2 {
+  .home-content #self-intro {
     width: 100%;
   }
-  nav ul {
+  .home-content #self-intro h2 {
+    width: 100%;
+    font-size: clamp(3.5rem, 8vw, 8rem);
+  }
+  .home-content #self-intro h3 {
+    width: 100%;
+    font-size: clamp(2rem, 6vw, 6rem);
+  }
+  .home-content figure {
+    width: 100%;
+    padding: 3rem 3rem;
+  }
+  .home-content figure img {
+    width: 100%;
+    height: auto;
+  }
+  .home-content nav {
     width: 100%;
   }
 }/*# sourceMappingURL=index.css.map */
