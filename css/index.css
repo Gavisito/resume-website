@@ -15,6 +15,7 @@ body {
   font-size: 12px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -222,6 +223,55 @@ button {
   font-family: Verdana;
   font-size: clamp(1rem, 2vw, 2rem);
   padding-bottom: 2.5rem;
+}
+
+.exp-content article {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 15rem;
+}
+.exp-content article h1 {
+  font-size: clamp(3rem, 14vw, 14rem);
+  padding-left: 2rem;
+  padding-top: 3rem;
+}
+.exp-content article h2 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  color: #563C5C;
+  position: relative;
+}
+.exp-content article ul {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: start;
+  position: sticky;
+  padding: 1rem 2rem;
+  background-color: #F8F8FF;
+  top: 0;
+  z-index: 4;
+  overflow-x: auto;
+  gap: 2rem;
+}
+.exp-content article ul li {
+  list-style: none;
+}
+.exp-content article ul li a {
+  color: #6C3082;
+  text-decoration: none;
+  font-size: clamp(3em, 4vw, 4rem);
+  white-space: nowrap;
+}
+.exp-content article section {
+  width: 95%;
+  height: 500px;
+  margin: 4rem auto;
+  background-color: #563C5C;
+  scroll-margin-top: 8vw;
 }
 
 @media screen and (max-width: 1025px) {
