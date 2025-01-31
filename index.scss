@@ -123,9 +123,16 @@ button{
             height: fit-content;
             display: flex;
             justify-content: end;
-            button{
+            a{
+              padding: 1rem 2.5rem;
+              border: 2px solid black;
+              font-size: 1.25rem;
               background-color:#563C5C;
               color: white;
+              text-decoration: none;
+              font-weight: bold;
+              border-radius: 5px;
+              margin: 0.5rem;
             }
           }
           h3{
@@ -253,7 +260,7 @@ nav{
             width: 100%;
             .visit-link{
               justify-content: start;
-              button{
+              a{
                 padding: 1rem 1.5rem;
               }
             }
