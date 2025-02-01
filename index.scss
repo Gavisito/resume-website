@@ -121,7 +121,7 @@ button{
 
   #self-intro{
     width: 45%;
-    padding: 3rem 3rem;
+    padding: 1rem 2rem;
     h2{
       text-align: left;
       word-break:keep-all;
@@ -152,14 +152,14 @@ button{
     width: 55%;
     height: 50%;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
 
     img{
-      width: 100%;
+      width: 95%;
       height: 100%;
       max-height: 800px;
-      padding: 3rem 5%;
+      margin: 3rem 2.5%;
+      border-radius: 1rem;
     }
   }
 }
@@ -427,9 +427,10 @@ button{
 @media screen and (max-width: 1025px) {
   .home-content{
     flex-direction: column-reverse;
+    padding-bottom: 8rem;
     #self-intro{
       width: 100%;
-      padding: 3rem 2rem;
+      padding: 0rem 2rem;
       h2{
         width: 100%;
         font-size: clamp(3.5rem, 8vw, 8rem);
@@ -448,7 +449,7 @@ button{
       img{
         width: 100%;
         height: 100vw;
-        padding: 2rem  2rem;
+        padding: 1rem  1rem;
       };
     }
   }

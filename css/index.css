@@ -121,7 +121,7 @@ button:hover {
 }
 .home-content #self-intro {
   width: 45%;
-  padding: 3rem 3rem;
+  padding: 1rem 2rem;
 }
 .home-content #self-intro h2 {
   text-align: left;
@@ -152,14 +152,14 @@ button:hover {
   width: 55%;
   height: 50%;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
 }
 .home-content figure img {
-  width: 100%;
+  width: 95%;
   height: 100%;
   max-height: 800px;
-  padding: 3rem 5%;
+  margin: 3rem 2.5%;
+  border-radius: 1rem;
 }
 
 .projects-content {
@@ -435,10 +435,11 @@ button:hover {
 @media screen and (max-width: 1025px) {
   .home-content {
     flex-direction: column-reverse;
+    padding-bottom: 8rem;
   }
   .home-content #self-intro {
     width: 100%;
-    padding: 3rem 2rem;
+    padding: 0rem 2rem;
   }
   .home-content #self-intro h2 {
     width: 100%;
@@ -457,7 +458,7 @@ button:hover {
   .home-content figure img {
     width: 100%;
     height: 100vw;
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
   }
   .projects-content article h2 {
     padding-bottom: 0rem;
