@@ -432,6 +432,61 @@ button:hover {
   color: white;
 }
 
+.about-content {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 4rem;
+}
+.about-content article {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.about-content article h1 {
+  font-size: clamp(5rem, 11vw, 11rem);
+  padding: 6.5rem 1rem;
+  text-align: center;
+}
+.about-content article section {
+  width: 98%;
+  height: 100vh;
+  display: flex;
+  margin: auto;
+  border: 2px solid black;
+}
+.about-content article section figure {
+  width: 50%;
+  height: 100%;
+}
+.about-content article section figure img {
+  width: 100%;
+  height: 100%;
+}
+.about-content article section div {
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+.about-content article section div p {
+  font-family: verdana;
+  font-size: clamp(1.6rem, 2vw, 2rem);
+}
+.about-content article section div h3 {
+  font-size: clamp(4rem, 5vw, 5rem);
+  color: black;
+  margin-bottom: 0.75rem;
+  margin-top: 5rem;
+}
+.about-content article #s2 {
+  flex-direction: row-reverse;
+}
+
 @media screen and (max-width: 1025px) {
   .home-content {
     flex-direction: column-reverse;
@@ -459,6 +514,38 @@ button:hover {
     width: 100%;
     height: 100vw;
     padding: 1rem 1rem;
+  }
+  .about-content article section {
+    flex-direction: column;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: none;
+  }
+  .about-content article section figure {
+    width: 98%;
+    margin: auto;
+  }
+  .about-content article section figure img {
+    max-height: 50rem;
+  }
+  .about-content article section div {
+    width: 90%;
+    margin: auto;
+    padding: 15vh 1rem;
+  }
+  .about-content article section div h3 {
+    margin-top: 0;
+  }
+  .about-content article #s2 {
+    flex-direction: column;
+  }
+  .about-content article #s2 figure {
+    width: 98%;
+    margin: auto;
+  }
+  .about-content article #s2 div {
+    width: 90%;
+    margin: auto;
   }
   .projects-content article h2 {
     padding-bottom: 0rem;
