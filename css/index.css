@@ -313,7 +313,7 @@ button {
   height: -moz-fit-content;
   height: fit-content;
   margin: 4rem auto;
-  scroll-margin-top: 12vh;
+  scroll-margin-top: 16vh;
 }
 .exp-content article section h3 {
   font-size: clamp(3rem, 4vw, 4rem);
