@@ -81,7 +81,7 @@ nav ul {
   justify-content: center;
   width: 100%;
   padding: 5rem 1rem;
-  background-color: #563C5C;
+  background-color: #6F00FF;
 }
 nav ul li {
   padding: 0.25rem 1.25rem;
@@ -126,7 +126,7 @@ button {
 }
 .home-content #self-intro h3 {
   font-size: clamp(2rem, 3vw, 3rem);
-  color: #563C5C;
+  color: #6F00FF;
   margin-bottom: 3rem;
 }
 .home-content #self-intro a {
@@ -169,7 +169,7 @@ button {
   font-size: clamp(2rem, 3vw, 3rem);
   padding-left: 2rem;
   padding-bottom: 3rem;
-  color: #563C5C;
+  color: #6F00FF;
 }
 .projects-content article section {
   width: 90%;
@@ -209,7 +209,7 @@ button {
   padding: 1rem 2.5rem;
   border: 2px solid black;
   font-size: 1.25rem;
-  background-color: #563C5C;
+  background-color: #6F00FF;
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -234,14 +234,14 @@ button {
 }
 .exp-content article h1 {
   font-size: clamp(3rem, 14vw, 14rem);
-  padding-left: 3rem;
+  padding-left: 1rem;
   padding-top: 3rem;
 }
 .exp-content article h2 {
   font-size: clamp(1.5rem, 2.5vw, 2.25rem);
-  padding-left: 3rem;
+  padding-left: 1rem;
   padding-bottom: 3rem;
-  color: #563C5C;
+  color: #6F00FF;
   position: relative;
 }
 .exp-content article ul {
@@ -251,7 +251,7 @@ button {
   display: flex;
   justify-content: start;
   position: sticky;
-  padding: 3rem;
+  padding: 1rem;
   background-color: #F8F8FF;
   top: 0;
   z-index: 4;
@@ -262,9 +262,9 @@ button {
   list-style: none;
 }
 .exp-content article ul li a {
-  color: #6C3082;
+  color: #9683EC;
   text-decoration: none;
-  font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
   white-space: nowrap;
 }
 .exp-content article #technical-skills {
@@ -289,9 +289,14 @@ button {
   align-items: center;
   color: black;
   border: 2px solid black;
-  padding: 2rem 3rem;
+  padding: 1rem 2rem;
   text-align: center;
   font-size: 1.5rem;
+}
+.exp-content article #technical-skills .skills-list .skill-item:hover {
+  background-color: #6F00FF;
+  color: white;
+  transform: translateY(-8px) scale(1.5);
 }
 .exp-content article #technical-skills .art-carousel {
   width: 100%;
@@ -323,7 +328,7 @@ button {
   font-size: 2rem;
   margin-bottom: 1rem;
   font-family: verdana;
-  color: #563C5C;
+  color: #6F00FF;
 }
 .exp-content article section p {
   font-size: clamp(1.25rem, 1.75vw, 1.75rem);
