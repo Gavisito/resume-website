@@ -475,10 +475,10 @@ button:hover {
 }
 .about-content article section div p {
   font-family: verdana;
-  font-size: clamp(1.6rem, 2vw, 2rem);
+  font-size: clamp(1.6rem, 1.75vw, 1.75rem);
 }
 .about-content article section div h3 {
-  font-size: clamp(4rem, 5vw, 5rem);
+  font-size: clamp(4rem, 4.5vw, 4.5rem);
   color: black;
   margin-bottom: 0.75rem;
   margin-top: 5rem;
@@ -529,7 +529,7 @@ button:hover {
     max-height: 50rem;
   }
   .about-content article section div {
-    width: 90%;
+    width: 100%;
     margin: auto;
     padding: 15vh 1rem;
   }
@@ -544,7 +544,7 @@ button:hover {
     margin: auto;
   }
   .about-content article #s2 div {
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
   .projects-content article h2 {

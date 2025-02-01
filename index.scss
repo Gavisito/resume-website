@@ -460,10 +460,10 @@ button{
         padding: 2rem;
         p{
           font-family: verdana;
-          font-size: clamp(1.6rem, 2vw, 2rem);
+          font-size: clamp(1.6rem, 1.75vw, 1.75rem);
         }
         h3{
-          font-size: clamp(4rem, 5vw, 5rem);
+          font-size: clamp(4rem, 4.5vw, 4.5rem);
           color:black;
           margin-bottom: 0.75rem;
           margin-top: 5rem;
@@ -520,7 +520,7 @@ button{
           }
         }
         div{
-          width: 90%;
+          width: 100%;
           margin: auto;
           padding: 15vh 1rem;
           h3{
@@ -535,7 +535,7 @@ button{
           margin: auto;
         }
         div{
-          width: 90%;
+          width: 100%;
           margin: auto;
         }
       }
