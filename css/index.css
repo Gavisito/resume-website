@@ -25,7 +25,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid black;
 }
 .navbar h2 {
   font-size: clamp(1.5rem, 3vw, 3rem);
@@ -230,16 +230,16 @@ button {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
-  padding-bottom: 15rem;
+  padding-bottom: 5rem;
 }
 .exp-content article h1 {
   font-size: clamp(3rem, 14vw, 14rem);
-  padding-left: 1rem;
+  padding-left: 3rem;
   padding-top: 3rem;
 }
 .exp-content article h2 {
   font-size: clamp(1.5rem, 2.5vw, 2.25rem);
-  padding-left: 1rem;
+  padding-left: 3rem;
   padding-bottom: 3rem;
   color: #563C5C;
   position: relative;
@@ -251,7 +251,7 @@ button {
   display: flex;
   justify-content: start;
   position: sticky;
-  padding: 1rem;
+  padding: 3rem;
   background-color: #F8F8FF;
   top: 0;
   z-index: 4;
@@ -267,6 +267,47 @@ button {
   font-size: clamp(2.5rem, 3.5vw, 3.5rem);
   white-space: nowrap;
 }
+.exp-content article #technical-skills {
+  display: flex;
+  flex-direction: column;
+}
+.exp-content article #technical-skills .skills-list {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+.exp-content article #technical-skills .skills-list .skill-item {
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: 2px solid black;
+  padding: 2rem 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.exp-content article #technical-skills .art-carousel {
+  width: 100%;
+  margin: auto;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.exp-content article #technical-skills .art-carousel img {
+  width: 35rem;
+  height: auto;
+}
 .exp-content article section {
   width: 95%;
   height: -moz-fit-content;
@@ -275,43 +316,30 @@ button {
   scroll-margin-top: 12vh;
 }
 .exp-content article section h3 {
-  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-size: clamp(3rem, 4vw, 4rem);
   margin-bottom: 1rem;
 }
 .exp-content article section h4 {
-  font-size: 1.3rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   font-family: verdana;
   color: #563C5C;
 }
 .exp-content article section p {
-  font-size: clamp(1.25rem, 2vw, 2rem);
+  font-size: clamp(1.25rem, 1.75vw, 1.75rem);
   font-family: verdana;
-  margin-bottom: 1.5rem;
-}
-.exp-content article section .art-carousel {
-  width: 95%;
-  margin: auto;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  gap: 1rem;
-}
-.exp-content article section .art-carousel img {
-  width: 35rem;
-  height: auto;
+  margin-bottom: 2rem;
 }
 .exp-content article section figure {
-  width: 35%;
+  width: 45%;
   height: auto;
 }
 .exp-content article section figure img {
   width: 100%;
-  max-height: 35rem;
+  max-height: 45rem;
   float: left;
   margin-right: 20px;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 1025px) {
