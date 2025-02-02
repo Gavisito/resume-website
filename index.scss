@@ -171,12 +171,12 @@ button{
   article{
     h1{
       font-size: clamp(3rem, 15vw, 15rem);
-      padding-left: 1.5rem;
       padding-top: 3rem;
+      text-align: center;
     }
     h2{
       font-size: clamp(2rem, 3vw, 3rem);
-      padding-left: 1rem;
+      text-align: center;
       padding-bottom: 3rem;
       color: #6F00FF;
     }
@@ -249,8 +249,10 @@ button{
       font-size: clamp(3rem, 14vw, 14rem);
       padding-left: 1rem;
       padding-top: 3rem;
+      text-align: center;
     }
     h2{
+      text-align: center;
       font-size: clamp(1.5rem, 3vw, 3rem);
       padding-left: 1rem;
       padding-bottom: 3rem;
@@ -261,9 +263,9 @@ button{
       width: 100%;
       height: fit-content;
       display: flex;
-      justify-content: start;
+      justify-content: space-between;
       position: sticky;
-      padding: 1rem;
+      padding: 0 2.5%;
       background-color: #F8F8FF;
       top: 0;
       z-index: 4;
@@ -272,9 +274,9 @@ button{
       li{
         list-style: none;
         a{
-          color: #9683EC;
+          color: #2e10b2;
           text-decoration: none;
-          font-size: clamp(2rem, 3.5vw, 3.5rem);
+          font-size: clamp(2.25rem, 3.5vw, 3.5rem);
           white-space: nowrap;
         }
       }
