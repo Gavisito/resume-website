@@ -250,17 +250,16 @@ button:hover {
 }
 .exp-content article h1 {
   font-size: clamp(3rem, 14vw, 14rem);
-  padding-left: 1rem;
+  padding: 1rem;
   padding-top: 3rem;
   text-align: center;
 }
 .exp-content article h2 {
   text-align: center;
   font-size: clamp(1.5rem, 3vw, 3rem);
-  padding-left: 1rem;
+  padding: 1rem;
   padding-bottom: 3rem;
   color: #6F00FF;
-  position: relative;
 }
 .exp-content article ul {
   width: 100%;
@@ -301,7 +300,6 @@ button:hover {
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding-left: 1.75rem;
   font-size: clamp(4rem, 11vw, 11rem);
   color: #6F00FF;
   writing-mode: sideways-rl;
@@ -311,7 +309,7 @@ button:hover {
   width: 85%;
 }
 .exp-content article #education #edu-text p {
-  font-size: clamp(1rem, 3vw, 3rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
 }
 .exp-content article #work-experience .exp-item {
   margin-top: 3rem;
@@ -385,7 +383,7 @@ button:hover {
   padding: 1rem;
 }
 .exp-content article section h3 {
-  font-size: clamp(3.5rem, 5.5vw, 5.5rem);
+  font-size: clamp(3rem, 5.5vw, 5.5rem);
   margin-bottom: 1rem;
   color: #6F00FF;
   border-left: clamp(0.9rem, 1.5vw, 1.5rem) solid #6F00FF;
@@ -420,6 +418,7 @@ button:hover {
   font-size: clamp(3rem, 9vw, 9rem);
   text-align: center;
   margin-top: 3.5rem;
+  padding: 0.25rem;
 }
 .contact-content article h2 {
   width: 100%;
@@ -428,7 +427,6 @@ button:hover {
   height: fit-content;
   color: #6F00FF;
   text-align: center;
-  padding: 1rem;
 }
 .contact-content article section {
   width: 100%;
@@ -592,6 +590,7 @@ button:hover {
   }
   .projects-content article h2 {
     padding-bottom: 0rem;
+    padding: 0 1rem;
   }
   .projects-content article section .project-info {
     flex-direction: column;
@@ -637,16 +636,14 @@ button:hover {
     width: 100%;
     height: -moz-fit-content;
     height: fit-content;
-    padding-left: 1rem;
-    font-size: clamp(4rem, 6vw, 6rem);
     writing-mode: horizontal-tb;
+    font-size: 3rem;
   }
   .exp-content article #education #edu-text {
     width: 100%;
   }
   .exp-content article #education #edu-text p {
-    padding-left: 1rem;
-    font-size: clamp(1rem, 3vw, 3rem);
+    font-size: clamp(1.25rem, 3vw, 3rem);
   }
   .exp-content article #work-experience .exp-item {
     flex-direction: column;

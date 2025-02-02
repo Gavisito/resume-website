@@ -247,17 +247,16 @@ button{
     padding-bottom: 5rem;
     h1{
       font-size: clamp(3rem, 14vw, 14rem);
-      padding-left: 1rem;
+      padding: 1rem;
       padding-top: 3rem;
       text-align: center;
     }
     h2{
       text-align: center;
       font-size: clamp(1.5rem, 3vw, 3rem);
-      padding-left: 1rem;
+      padding: 1rem;
       padding-bottom: 3rem;
       color: #6F00FF;
-      position: relative;
     }
     ul{
       width: 100%;
@@ -294,7 +293,6 @@ button{
       h3{
         width: fit-content;
         height: fit-content;
-        padding-left: 1.75rem;
         font-size: clamp(4rem, 11vw, 11rem);
         color: #6F00FF;
         writing-mode:sideways-rl;
@@ -303,7 +301,7 @@ button{
       #edu-text{
         width: 85%;
         p{
-          font-size: clamp(1rem, 3vw, 3rem);
+          font-size: clamp(1.5rem, 3vw, 3rem);
         }
       }
     }
@@ -379,7 +377,7 @@ button{
       scroll-margin-top: 16vh;
       padding: 1rem;
       h3{
-        font-size: clamp(3.5rem, 5.5vw, 5.5rem);
+        font-size: clamp(3rem, 5.5vw, 5.5rem);
         margin-bottom: 1rem;
         color: #6F00FF;
         border-left: clamp(.90rem, 1.5vw, 1.5rem) solid #6F00FF;
@@ -413,6 +411,7 @@ button{
       font-size: clamp(3rem, 9vw, 9rem);
       text-align: center;
       margin-top: 3.5rem;
+      padding: 0.25rem;
     }
     h2{
       width: 100%;
@@ -420,7 +419,6 @@ button{
       height: fit-content;
       color: #6F00FF;
       text-align: center;
-      padding: 1rem;
     }
 
     section{
@@ -591,6 +589,7 @@ button{
     article{
       h2{
         padding-bottom: 0rem;
+        padding: 0 1rem;
       }
       section{
         .project-info{
@@ -654,16 +653,14 @@ button{
         h3{
           width: 100%;
           height: fit-content;
-          padding-left: 1rem;
-          font-size: clamp(4rem, 6vw, 6rem);
           writing-mode:horizontal-tb;
+          font-size: 3rem;
         }
         #edu-text{
           width: 100%;
 
           p{
-            padding-left: 1rem;
-            font-size: clamp(1rem, 3vw, 3rem);
+            font-size: clamp(1.25rem, 3vw, 3rem);
           }
         }
       }
