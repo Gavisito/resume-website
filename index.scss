@@ -265,7 +265,7 @@ button{
       display: flex;
       justify-content: space-between;
       position: sticky;
-      padding: 0 2.5%;
+      padding: 1rem;
       background-color: #F8F8FF;
       top: 0;
       z-index: 4;
@@ -299,7 +299,6 @@ button{
         color: #6F00FF;
         writing-mode:sideways-rl;
         text-orientation:sideways-right;
-        margin-left: 1rem;
       }
       #edu-text{
         width: 85%;
@@ -320,13 +319,11 @@ button{
           img{
             width: 100%;
             height: auto;
-            padding: 1rem;
           }
         }
         .exp-text{
           width: 62%;
           height: auto;
-          padding: 1rem;
         }
       }
     }
@@ -380,6 +377,7 @@ button{
       height: fit-content;
       margin: 4rem auto;
       scroll-margin-top: 16vh;
+      padding: 1rem;
       h3{
         font-size: clamp(3.5rem, 5.5vw, 5.5rem);
         margin-bottom: 1rem;
