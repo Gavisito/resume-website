@@ -560,7 +560,7 @@ button:hover {
     margin: auto;
   }
   .about-content article section figure img {
-    max-height: 50rem;
+    max-height: 70rem;
   }
   .about-content article section div {
     width: 100%;
@@ -603,14 +603,6 @@ button:hover {
   .projects-content article section .project-info .project-section .visit-link a {
     padding: 1rem 1.5rem;
   }
-  .exp-content article #work-experience .exp-info {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .exp-content article #work-experience .exp-info figure {
-    margin: auto;
-    width: 95%;
-  }
   .contact-content article .contact-links {
     flex-direction: column;
     gap: 4rem;
@@ -623,5 +615,15 @@ button:hover {
 @media screen and (max-width: 320px) {
   .exp-content article section h4 {
     font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .exp-content article #work-experience .exp-info {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .exp-content article #work-experience .exp-info figure {
+    margin: auto;
+    width: 95%;
   }
 }/*# sourceMappingURL=index.css.map */

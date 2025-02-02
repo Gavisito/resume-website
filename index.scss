@@ -552,7 +552,7 @@ button{
           width: 98%;
           margin: auto;
           img{
-            max-height: 50rem;
+            max-height: 70rem;
           }
         }
         div{
@@ -607,21 +607,6 @@ button{
     }
   }
 
-  .exp-content{
-    article{
-      #work-experience{
-        .exp-info{
-          flex-direction: column;
-          gap: 1.5rem;
-          figure{
-            margin: auto;
-            width: 95%;
-          }
-        }
-      }
-    }
-  }
-
   .contact-content{
     article{
       .contact-links{
@@ -642,6 +627,23 @@ button{
       section{
         h4{
           font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .exp-content{
+    article{
+      #work-experience{
+        .exp-info{
+          flex-direction: column;
+          gap: 1.5rem;
+          figure{
+            margin: auto;
+            width: 95%;
+          }
         }
       }
     }
