@@ -278,12 +278,60 @@ button:hover {
 }
 .exp-content article ul li {
   list-style: none;
+  border: 5px solid black;
+  padding: 0.5rem 3rem;
 }
 .exp-content article ul li a {
-  color: #2e10b2;
+  color: black;
   text-decoration: none;
-  font-size: clamp(2.25rem, 3.5vw, 3.5rem);
+  font-size: clamp(1.75rem, 2.75vw, 2.75rem);
   white-space: nowrap;
+}
+.exp-content article #education {
+  width: 95%;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 8rem;
+}
+.exp-content article #education h3 {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-left: 1.75rem;
+  font-size: clamp(4rem, 11vw, 11rem);
+  color: #6F00FF;
+  writing-mode: sideways-rl;
+  text-orientation: sideways-right;
+  margin-left: 1rem;
+}
+.exp-content article #education #edu-text {
+  width: 85%;
+}
+.exp-content article #education #edu-text p {
+  font-size: clamp(1rem, 3vw, 3rem);
+}
+.exp-content article #work-experience .exp-item {
+  margin-top: 3rem;
+  display: flex;
+  gap: 3%;
+}
+.exp-content article #work-experience .exp-item figure {
+  width: 35%;
+  height: auto;
+}
+.exp-content article #work-experience .exp-item figure img {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+.exp-content article #work-experience .exp-item .exp-text {
+  width: 62%;
+  height: auto;
+  padding: 1rem;
 }
 .exp-content article #technical-skills {
   display: flex;
@@ -307,9 +355,9 @@ button:hover {
   align-items: center;
   color: black;
   border: 2px solid black;
-  padding: 1rem 2rem;
+  padding: 1.5rem clamp(2.5rem, 4vw, 4rem);
   text-align: center;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 3vw, 3rem);
 }
 .exp-content article #technical-skills .skills-list .skill-item:hover {
   background-color: #6F00FF;
@@ -339,8 +387,11 @@ button:hover {
   scroll-margin-top: 16vh;
 }
 .exp-content article section h3 {
-  font-size: clamp(3rem, 4vw, 4rem);
+  font-size: clamp(3.5rem, 5.5vw, 5.5rem);
   margin-bottom: 1rem;
+  color: #6F00FF;
+  border-left: clamp(0.9rem, 1.5vw, 1.5rem) solid #6F00FF;
+  padding-left: 1rem;
 }
 .exp-content article section h4 {
   font-size: clamp(1.75rem, 3.5vw, 3.5rem);
@@ -349,50 +400,6 @@ button:hover {
   color: #6F00FF;
 }
 .exp-content article section p {
-  font-size: clamp(1.25rem, 2vw, 2rem);
-  font-family: verdana;
-  margin-bottom: 2rem;
-}
-.exp-content article #work-experience {
-  display: flex;
-  flex-direction: column;
-}
-.exp-content article #work-experience .exp-info {
-  width: 100%;
-  display: flex;
-  gap: 5rem;
-}
-.exp-content article #work-experience .exp-info figure {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-.exp-content article #work-experience .exp-info figure img {
-  width: 100%;
-  max-height: 50rem;
-}
-.exp-content article #work-experience .exp-info figure figcaption {
-  color: #390083;
-  margin-top: 1rem;
-  font-size: 1.25rem;
-}
-.exp-content article #work-experience .exp-info .exp-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.exp-content article #work-experience .exp-info .exp-item h3 {
-  font-size: clamp(3rem, 4vw, 4rem);
-  margin-bottom: 1rem;
-}
-.exp-content article #work-experience .exp-info .exp-item h4 {
-  font-size: clamp(1.75rem, 3.5vw, 3.5rem);
-  margin-bottom: 1rem;
-  font-family: verdana;
-  color: #6F00FF;
-}
-.exp-content article #work-experience .exp-info .exp-item p {
   font-size: clamp(1.25rem, 2vw, 2rem);
   font-family: verdana;
   margin-bottom: 2rem;
@@ -413,7 +420,8 @@ button:hover {
   height: -moz-fit-content;
   height: fit-content;
   font-size: clamp(3rem, 9vw, 9rem);
-  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 3.5rem;
 }
 .contact-content article h2 {
   width: 100%;
@@ -421,7 +429,8 @@ button:hover {
   height: -moz-fit-content;
   height: fit-content;
   color: #6F00FF;
-  padding-left: 1rem;
+  text-align: center;
+  padding: 1rem;
 }
 .contact-content article section {
   width: 100%;
@@ -620,12 +629,34 @@ button:hover {
   }
 }
 @media screen and (max-width: 800px) {
-  .exp-content article #work-experience .exp-info {
+  .exp-content article #education {
     flex-direction: column;
-    gap: 1.5rem;
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
   }
-  .exp-content article #work-experience .exp-info figure {
-    margin: auto;
-    width: 95%;
+  .exp-content article #education h3 {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-left: 1rem;
+    font-size: clamp(4rem, 6vw, 6rem);
+    writing-mode: horizontal-tb;
+  }
+  .exp-content article #education #edu-text {
+    width: 100%;
+  }
+  .exp-content article #education #edu-text p {
+    padding-left: 1rem;
+    font-size: clamp(1rem, 3vw, 3rem);
+  }
+  .exp-content article #work-experience .exp-item {
+    flex-direction: column;
+  }
+  .exp-content article #work-experience .exp-item figure {
+    width: 100%;
+  }
+  .exp-content article #work-experience .exp-item .exp-text {
+    width: 100%;
   }
 }/*# sourceMappingURL=index.css.map */

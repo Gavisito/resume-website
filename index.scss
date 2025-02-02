@@ -273,14 +273,64 @@ button{
       gap: 1rem;
       li{
         list-style: none;
+        border: 5px solid black;
+        padding: 0.5rem 3rem;
         a{
-          color: #2e10b2;
+          color: black;
           text-decoration: none;
-          font-size: clamp(2.25rem, 3.5vw, 3.5rem);
+          font-size: clamp(1.75rem, 2.75vw, 2.75rem);
           white-space: nowrap;
         }
       }
     }
+
+    #education{
+      width: 95%;
+      height: fit-content;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      margin-top: 8rem;
+      h3{
+        width: fit-content;
+        height: fit-content;
+        padding-left: 1.75rem;
+        font-size: clamp(4rem, 11vw, 11rem);
+        color: #6F00FF;
+        writing-mode:sideways-rl;
+        text-orientation:sideways-right;
+        margin-left: 1rem;
+      }
+      #edu-text{
+        width: 85%;
+        p{
+          font-size: clamp(1rem, 3vw, 3rem);
+        }
+      }
+    }
+
+    #work-experience{
+      .exp-item{
+        margin-top: 3rem;
+        display: flex;
+        gap: 3%;
+        figure{
+          width: 35%;
+          height: auto;
+          img{
+            width: 100%;
+            height: auto;
+            padding: 1rem;
+          }
+        }
+        .exp-text{
+          width: 62%;
+          height: auto;
+          padding: 1rem;
+        }
+      }
+    }
+
     #technical-skills{
       display: flex;
       flex-direction: column;
@@ -299,9 +349,9 @@ button{
           align-items: center;
           color: black;
           border: 2px solid black;
-          padding: 1rem 2rem;
+          padding: 1.5rem clamp(2.5rem, 4vw, 4rem);
           text-align: center;
-          font-size: 1.5rem;
+          font-size: clamp(1rem, 3vw, 3rem);
           &:hover{
             background-color: #6F00FF;
             color:white;
@@ -331,8 +381,11 @@ button{
       margin: 4rem auto;
       scroll-margin-top: 16vh;
       h3{
-        font-size: clamp(3rem, 4vw, 4rem);
+        font-size: clamp(3.5rem, 5.5vw, 5.5rem);
         margin-bottom: 1rem;
+        color: #6F00FF;
+        border-left: clamp(.90rem, 1.5vw, 1.5rem) solid #6F00FF;
+        padding-left: 1rem;
       }
       h4{
         font-size: clamp(1.75rem, 3.5vw, 3.5rem);
@@ -344,51 +397,6 @@ button{
         font-size: clamp(1.25rem, 2vw, 2rem);
         font-family: verdana;
         margin-bottom: 2rem;
-      }
-    }
-
-    #work-experience{
-      display: flex;
-      flex-direction: column;
-      .exp-info{
-        width: 100%;
-        display: flex;
-        gap: 5rem;
-        figure{
-          width: 100%;
-          height: auto;
-          display: flex;
-          flex-direction: column;
-          img{
-            width: 100%;
-            max-height: 50rem;
-          }
-          figcaption{
-            color: #390083;
-            margin-top: 1rem;
-            font-size: 1.25rem;
-          }
-        }
-        .exp-item{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          h3{
-            font-size: clamp(3rem, 4vw, 4rem);
-            margin-bottom: 1rem;
-          }
-          h4{
-            font-size: clamp(1.75rem, 3.5vw, 3.5rem);
-            margin-bottom: 1rem;
-            font-family: verdana;
-            color: #6F00FF;
-          }
-          p{
-            font-size: clamp(1.25rem, 2vw, 2rem);
-            font-family: verdana;
-            margin-bottom: 2rem;
-          }
-        }
       }
     }
   }
@@ -405,14 +413,16 @@ button{
       width: 100%;
       height: fit-content;
       font-size: clamp(3rem, 9vw, 9rem);
-      padding: 2rem 1rem;
+      text-align: center;
+      margin-top: 3.5rem;
     }
     h2{
       width: 100%;
       font-size: clamp(3rem, 7vw, 7rem);
       height: fit-content;
       color: #6F00FF;
-      padding-left: 1rem;
+      text-align: center;
+      padding: 1rem;
     }
 
     section{
@@ -637,13 +647,37 @@ button{
 @media screen and (max-width: 800px) {
   .exp-content{
     article{
+      #education{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 5rem;
+
+        h3{
+          width: 100%;
+          height: fit-content;
+          padding-left: 1rem;
+          font-size: clamp(4rem, 6vw, 6rem);
+          writing-mode:horizontal-tb;
+        }
+        #edu-text{
+          width: 100%;
+
+          p{
+            padding-left: 1rem;
+            font-size: clamp(1rem, 3vw, 3rem);
+          }
+        }
+      }
+
       #work-experience{
-        .exp-info{
+        .exp-item{
           flex-direction: column;
-          gap: 1.5rem;
           figure{
-            margin: auto;
-            width: 95%;
+            width: 100%;
+          }
+          .exp-text{
+            width: 100%;
           }
         }
       }
